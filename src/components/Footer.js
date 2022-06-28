@@ -3,18 +3,19 @@ import './Footer.css'
 
 export default () => (
   <div>
-    <h2 className="taCenter">
-      Follow us{' '}
-      <a href="https://instagram.com/thrivegoldcoast/">@thrivegoldcoast</a>
-    </h2>
+    {/* <h2 className="taCenter">
+      <a className="socialLink" href="https://instagram.com/jo.degousee/" target="_blank" rel="noreferrer">@sal_eigh</a>
+    </h2> */}
+    <h3 className="taCenter">
+      <span className="email">jodegousee@gmail.com</span>
+    </h3>
     <br />
     <footer className="footer">
       <div className="container taCenter">
         <span>
-          © Copyright {new Date().getFullYear()} All rights reserved. Crafted by{' '}
-          <a href="https://thriveweb.com.au/">Thrive</a>.
+          © Copyright {new Date().getFullYear()} Sal Eigh. All rights reserved. Crafted by{' '}
+          <a href="https://thriveweb.com.au/" target="_blank" rel="noreferrer">Thrive</a>.
         </span>
       </div>
     </footer>
   </div>
-)
