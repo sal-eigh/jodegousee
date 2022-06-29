@@ -81,7 +81,7 @@ export class Navigation extends Component {
               <span
                 className={`NavLink Nav--GroupParent ${
                   this.props.location.pathname.includes('posts') ||
-                  this.props.location.pathname.includes('blog') ||
+                  this.props.location.pathname.includes('works') ||
                   this.props.location.pathname.includes('post-categories')
                     ? 'active'
                     : ''
@@ -92,10 +92,10 @@ export class Navigation extends Component {
                 aria-label="Navigation"
                 role="button"
               >
-                Blog
+                Works
                 <div className="Nav--GroupLinks">
-                  <NavLink to="/blog/" className="Nav--GroupLink">
-                    All Posts
+                  <NavLink to="/works/" className="Nav--GroupLink">
+                    All Works
                   </NavLink>
                   {subNav.posts.map((link, index) => (
                     <NavLink

@@ -98,8 +98,8 @@ collections: # A list of collections the CMS should be able to edit
                   required: false,
                 }
 
-      - file: 'content/pages/blog.md'
-        label: 'Blog Page'
+      - file: 'content/pages/works.md'
+        label: 'All Works'
         name: 'blog-page'
         fields:
           - {

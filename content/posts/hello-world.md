@@ -10,7 +10,7 @@ excerpt: >-
   est, lobortis ac efficitur vitae, posuere a mauris. Phasellus ac dui
   pellentesque, lacinia risus ut, imperdiet eros.
 categories:
-  - category: News
+  - category: ScreenplaysScreenplays
 meta:
   canonicalLink: ''
   description: test meta description

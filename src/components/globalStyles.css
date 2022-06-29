@@ -1,10 +1,10 @@
 :root {
-  --primary: #00c2bd;
+  --primary: goldenrod;
   --secondary: #000;
   --lightGrey: whitesmoke;
   --midGrey: #cacaca;
   --darkGrey: #272727;
-  --danger: #ff3d3d;
+  --danger: firebrick;
   --font-primary: 'Open Sans', sans-serif;
   --font-system: system-ui; /* postcssPresetEnv */
   --borderRadius: 3px;

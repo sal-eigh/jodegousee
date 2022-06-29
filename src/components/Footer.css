@@ -11,4 +11,8 @@
 
 .socialLink {
   text-decoration: none;
-} 
+}
+
+.email {
+  color: var(--primary);
+}
