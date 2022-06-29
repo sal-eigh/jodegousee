@@ -1,4 +1,0 @@
----
-template: BlogIndex
-title: Television
----
