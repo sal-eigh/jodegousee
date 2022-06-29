@@ -5,6 +5,8 @@ status: Published
 date: 2018-02-26
 featuredImage: https://ucarecdn.com/1341d6bb-3c62-45b6-85a0-835641de5029/-/crop/2048x1078/0,74/-/preview/
 excerpt: Music video for "Deep" by City Fidelia
+categories:
+  - category: Music Videos
 ---
 Music video for "Deep" by City Fidelia
 
