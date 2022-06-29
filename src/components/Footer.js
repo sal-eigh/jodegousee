@@ -4,10 +4,10 @@ import './Footer.css'
 export default () => (
   <div>
     {/* <h2 className="taCenter">
-      <a className="socialLink" href="https://instagram.com/jo.degousee/" target="_blank" rel="noreferrer">@sal_eigh</a>
+      <a className="socialLink" href="https://instagram.com/sal_eigh/" target="_blank" rel="noreferrer">@sal_eigh</a>
     </h2> */}
     <h3 className="taCenter">
-      <span className="email">jodegousee@gmail.com</span>
+      <span className="email">sal.eigh.info@gmail.com</span>
     </h3>
     <br />
     <footer className="footer">
@@ -19,3 +19,4 @@ export default () => (
       </div>
     </footer>
   </div>
+)
