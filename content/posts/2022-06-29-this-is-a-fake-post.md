@@ -4,7 +4,7 @@ title: The World Is Theirs
 status: Published
 date: 2022-06-28
 featuredImage: https://ucarecdn.com/76ad21b7-197f-4f17-80bf-a9d5f502f09c/
-excerpt: Feature Film / Drama / Seeking Financing
+excerpt: Feature Film, Drama, Seeking Financing
 categories:
   - category: Cinema
 ---
