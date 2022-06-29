@@ -100,7 +100,7 @@ collections: # A list of collections the CMS should be able to edit
 
       - file: 'content/pages/works.md'
         label: 'All Works'
-        name: 'blog-page'
+        name: 'all-works'
         fields:
           - {
               label: Template,
