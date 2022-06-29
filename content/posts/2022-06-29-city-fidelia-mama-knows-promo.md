@@ -3,6 +3,7 @@ template: SinglePost
 title: City Fidelia - Mama Knows (Promo)
 status: Published
 date: 2019-05-12
+featuredImage: https://ucarecdn.com/a59a2d59-144d-4b54-87eb-9a81e8a4eee8/
 excerpt: Music video for "Mama Knows" by City Fidelia
 categories:
   - category: Music Videos
