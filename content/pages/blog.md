@@ -2,8 +2,8 @@
 template: BlogIndex
 slug: works
 title: All Works
-featuredImage: 'https://ucarecdn.com/b6254577-26bf-4b79-aa9b-f3793e2aebdc/'
-subtitle: This is the blog page subtitle.
+featuredImage: https://i.ibb.co/nQzMLVN/swinging.jpg
+subtitle:
 meta:
   description: This is a meta description.
   title: All Works
