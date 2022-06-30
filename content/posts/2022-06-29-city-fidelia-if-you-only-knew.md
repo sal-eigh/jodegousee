@@ -8,9 +8,9 @@ excerpt: Music video for "If You Only Knew" by City Fidelia
 categories:
   - category: Music Videos
 ---
-Music video for "If You Only Knew" by City Fidelia
+Music video for "If You Only Knew" by City Fidelia.
 
-Shot in Toronto, Ontario
+Shot in Toronto, Ontario.
 
 **Director / Editor**
 
