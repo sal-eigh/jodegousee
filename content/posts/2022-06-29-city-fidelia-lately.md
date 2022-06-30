@@ -10,9 +10,9 @@ excerpt: |+
 categories:
   - category: Music Videos
 ---
-Music video for "Lately" by City Fidelia
+Music video for "Lately" by City Fidelia.
 
-Shot in Toronto, Ontario
+Shot in Toronto, Ontario.
 
 **Director / Editor**
 
