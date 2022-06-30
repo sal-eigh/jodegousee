@@ -9,9 +9,10 @@ excerpt: |
 categories:
   - category: Music Videos
 ---
-Music video for "College Dropout" by City Fidelia
+Music video for "College Dropout" by City Fidelia.
 
-Shot in Ottawa, Ontario
+Shot in Ottawa, Ontario.
 
 **Director / Cinematographer**
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HIxOWLdEvk4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
