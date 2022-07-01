@@ -16,7 +16,6 @@ export const ContactPageTemplate = ({
   instagram,
   linkedin,
   email,
-  locations
 }) => (
   <main className="Contact">
     <PageHeader
@@ -72,14 +71,9 @@ export const pageQuery = graphql`
         template
         subtitle
         featuredImage
-        address
-        phone
+        instagram
+        linkedin
         email
-        locations {
-          mapLink
-          lat
-          lng
-        }
       }
     }
   }
