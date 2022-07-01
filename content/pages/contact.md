@@ -4,13 +4,9 @@ slug: contact
 title: Contact
 featuredImage: https://ucarecdn.com/e72d1f7b-0d7c-4b7d-895b-a85bd732e2ed/-/crop/5107x1003/0,151/-/preview/
 subtitle: This is the contact page subtitle.
-address: IG
-phone: LinkedIn
+instagram: IG
+linkedin: LinkedIn
 email: jodegousee@gmail.com
-locations:
-  - lat: "-27.9654732"
-    lng: "153.2432449"
-    mapLink: ""
 meta:
   description: This is a meta description.
   title: Contact Page

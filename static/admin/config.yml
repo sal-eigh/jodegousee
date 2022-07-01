@@ -41,38 +41,11 @@ collections: # A list of collections the CMS should be able to edit
               options:
                 { media_library: { config: { imageShrink: 2600x2600 } } },
             }
-          - { label: Subtitle, name: subtitle, widget: markdown }
+          - { label: Subtitle, name: subtitle, widget: markdown, required: false }
           - { label: Body, name: body, widget: markdown }
-          - { label: Address, name: address, widget: text }
-          - { label: Phone, name: phone, widget: string }
+          - { label: Instagram, name: instagram, widget: text }
+          - { label: Linkedin, name: linkedin, widget: string }
           - { label: Email Address, name: email, widget: string }
-          - name: locations
-            label: locations
-            widget: list
-            fields:
-              - {
-                  name: mapLink,
-                  label: mapLink,
-                  widget: string,
-                  required: false,
-                  default: '',
-                }
-              - {
-                  name: lat,
-                  label: latitude,
-                  widget: string,
-                  required: false,
-                  delete: false,
-                  default: '',
-                }
-              - {
-                  name: lng,
-                  label: longitude,
-                  widget: string,
-                  required: false,
-                  delete: false,
-                  default: '',
-                }
           - label: 'Meta'
             required: false
             name: 'meta'
