@@ -5,7 +5,6 @@ import { graphql } from 'gatsby'
 import PageHeader from '../components/PageHeader'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
-import Image from '../components/Image'
 import './ContactPage.css'
 
 // Export Template for use in CMS preview
@@ -27,8 +26,7 @@ export const ContactPageTemplate = ({
     <section className="section Contact--Section1">
       <div className="container Contact--Section1--Container">
         <div className="Contact--Details">
-          <Image
-            resolutions="medium"
+          <img
             className="Content--Image Contact--Details__Pic"
             src={profilePic}
           />
