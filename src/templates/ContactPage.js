@@ -31,6 +31,8 @@ export const ContactPageTemplate = ({
       <div className="container Contact--Section1--Container">
         <Image
           resolutions="medium"
+          className="Content--Image"
+          lazy={false}
           src={profilePic}
         />
         <div className="Contact--Details">
