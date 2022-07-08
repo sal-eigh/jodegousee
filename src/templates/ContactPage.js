@@ -22,7 +22,6 @@ export const ContactPageTemplate = ({
   <main className="Contact">
     <PageHeader
       title={title}
-      subtitle={subtitle}
       backgroundImage={featuredImage}
     />
     <section className="section Contact--Section1">
