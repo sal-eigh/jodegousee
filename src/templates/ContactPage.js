@@ -26,22 +26,24 @@ export const ContactPageTemplate = ({
     />
     <section className="section Contact--Section1">
       <div className="container Contact--Section1--Container">
-        <Image
-          resolutions="medium"
-          className="Content--Image"
-          src={profilePic}
-        />
         <div className="Contact--Details">
-          {instagram && (
-            <a className="Contact--Details--Item" href={instagramLink} target="_blank" rel="noopener noreferrer">
-              <Instagram /> {instagram}
-            </a>
-          )}
-          {linkedin && (
-            <a className="Contact--Details--Item" href={linkedinLink} target="_blank" rel="noopener noreferrer">
-              <Linkedin /> {linkedin}
-            </a>
-          )}
+          <Image
+            resolutions="medium"
+            className="Content--Image Contact--Details__pic"
+            src={profilePic}
+          />
+          <div className="Contact--Details__items">
+            {instagram && (
+              <a className="Contact--Details--Item" href={instagramLink} target="_blank" rel="noopener noreferrer">
+                <Instagram /> {instagram}
+              </a>
+            )}
+            {linkedin && (
+              <a className="Contact--Details--Item" href={linkedinLink} target="_blank" rel="noopener noreferrer">
+                <Linkedin /> {linkedin}
+              </a>
+            )}
+          </div>
         </div>
       </div>
     </section>
