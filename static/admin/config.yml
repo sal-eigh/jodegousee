@@ -45,7 +45,6 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Body, name: body, widget: markdown, required: false }
           - { label: Instagram, name: instagram, widget: text, requred: false }
           - { label: Linkedin, name: linkedin, widget: string, required: false }
-          - { label: Email Address, name: email, widget: string, required: false }
           - label: 'Meta'
             required: false
             name: 'meta'

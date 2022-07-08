@@ -15,7 +15,6 @@ export const ContactPageTemplate = ({
   featuredImage,
   instagram,
   linkedin,
-  email,
 }) => (
   <main className="Contact">
     <PageHeader
@@ -36,11 +35,6 @@ export const ContactPageTemplate = ({
             {linkedin && (
               <a className="Contact--Details--Item" href={linkedin} target="_blank" rel="noopener noreferrer">
                 <Linkedin /> {linkedin}
-              </a>
-            )}
-            {email && (
-              <a className="Contact--Details--Item">
-                <Mail /> {email}
               </a>
             )}
           </div>
@@ -73,7 +67,6 @@ export const pageQuery = graphql`
         featuredImage
         instagram
         linkedin
-        email
       }
     }
   }
