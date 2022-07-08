@@ -28,12 +28,12 @@ export const ContactPageTemplate = ({
           <Content source={body} />
           <div className="Contact--Details">
             {instagram && (
-              <a className="Contact--Details--Item" href={instagram} target="_blank" rel="noopener noreferrer">
+              <a className="Contact--Details--Item" href=`https://www.instagram.com/{instagram}/` target="_blank" rel="noopener noreferrer">
                 <Instagram /> {instagram}
               </a>
             )}
             {linkedin && (
-              <a className="Contact--Details--Item" href={linkedin} target="_blank" rel="noopener noreferrer">
+              <a className="Contact--Details--Item" href=`https://www.linkedin.com/in/{linkedin}/` target="_blank" rel="noopener noreferrer">
                 <Linkedin /> {linkedin}
               </a>
             )}
