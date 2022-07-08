@@ -11,9 +11,7 @@ import './ContactPage.css'
 // Export Template for use in CMS preview
 
 export const ContactPageTemplate = ({
-  profilePic,
   title,
-  subtitle,
   featuredImage,
   instagram,
   linkedin,
@@ -70,7 +68,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         template
-        subtitle
         featuredImage
         instagram
         linkedin
