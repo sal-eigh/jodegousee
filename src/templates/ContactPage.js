@@ -34,7 +34,7 @@ export const ContactPageTemplate = ({
               </a>
             )}
             {linkedin && (
-              <a className="Contact--Details--Item" href=`https://www.linkedin.com/in/{linkedin}/` target="_blank" rel="noopener noreferrer">
+              <a className="Contact--Details--Item" href=`https://www.linkedin.com/in/${linkedin}/` target="_blank" rel="noopener noreferrer">
                 <Linkedin /> {linkedin}
               </a>
             )}
