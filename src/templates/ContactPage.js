@@ -10,14 +10,15 @@ import './ContactPage.css'
 // Export Template for use in CMS preview
 
 export const ContactPageTemplate = ({
-  body,
+  profilePic,
   title,
   subtitle,
   featuredImage,
   instagram,
   linkedin,
   instagramLink,
-  linkedinLink
+  linkedinLink,
+  profilePic
 }) => (
   <main className="Contact">
     <PageHeader
@@ -27,20 +28,21 @@ export const ContactPageTemplate = ({
     />
     <section className="section Contact--Section1">
       <div className="container Contact--Section1--Container">
-        <div>
-          <Content source={body} />
-          <div className="Contact--Details">
-            {instagram && (
-              <a className="Contact--Details--Item" href={instagramLink} target="_blank" rel="noopener noreferrer">
-                <Instagram /> {instagram}
-              </a>
-            )}
-            {linkedin && (
-              <a className="Contact--Details--Item" href={linkedinLink} target="_blank" rel="noopener noreferrer">
-                <Linkedin /> {linkedin}
-              </a>
-            )}
-          </div>
+        <Image
+          resolutions="medium"
+          src={profilePic}
+        />
+        <div className="Contact--Details">
+          {instagram && (
+            <a className="Contact--Details--Item" href={instagramLink} target="_blank" rel="noopener noreferrer">
+              <Instagram /> {instagram}
+            </a>
+          )}
+          {linkedin && (
+            <a className="Contact--Details--Item" href={linkedinLink} target="_blank" rel="noopener noreferrer">
+              <Linkedin /> {linkedin}
+            </a>
+          )}
         </div>
       </div>
     </section>
@@ -52,7 +54,7 @@ const ContactPage = ({ data: { page } }) => (
     meta={page.frontmatter.meta || false}
     title={page.frontmatter.title || false}
   >
-    <ContactPageTemplate {...page.frontmatter} body={page.html} />
+    <ContactPageTemplate {...page.frontmatter} />
   </Layout>
 )
 
@@ -72,6 +74,7 @@ export const pageQuery = graphql`
         linkedin
         instagramLink
         linkedinLink
+        profilePic
       }
     }
   }
