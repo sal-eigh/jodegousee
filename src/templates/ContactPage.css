@@ -1,8 +1,12 @@
-.Contact {
-}
-
 .Contact--Details {
   margin-top: 3rem;
+}
+
+.Contact--Details--Items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .Contact--Details--Item {
@@ -31,8 +35,19 @@
     align-items: center;
   }
 
+  .Contact--Details__Pic {
+    margin-right: 2rem;
+  }
+
+  .Contact--Details--Items {
+    margin-left: 2rem;
+  }
+
   .Contact--Section1--Container {
     margin-bottom: 15rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
   }
 
   .Contact--Section1--Container > * {
