@@ -29,10 +29,10 @@ export const ContactPageTemplate = ({
         <div className="Contact--Details">
           <Image
             resolutions="medium"
-            className="Content--Image Contact--Details__pic"
+            className="Content--Image Contact--Details__Pic"
             src={profilePic}
           />
-          <div className="Contact--Details__items">
+          <div className="Contact--Details--Items">
             {instagram && (
               <a className="Contact--Details--Item" href={instagramLink} target="_blank" rel="noopener noreferrer">
                 <Instagram /> {instagram}
