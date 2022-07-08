@@ -46,7 +46,7 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Linkedin Handle, name: linkedin, widget: string, required: false }
           - { label: Instagram Link, name: instagramLink, widget: string, requred: false }
           - { label: Linkedin Link, name: linkedinLink, widget: string, required: false }
-          - { label: Profile Pic, name: profilePic, widget: image, required: false }
+          - { label: Profile Pic, name: profilePic, widget: image }
           - label: 'Meta'
             required: false
             name: 'meta'
