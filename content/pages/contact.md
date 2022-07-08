@@ -5,7 +5,6 @@ title: Contact
 featuredImage: https://ucarecdn.com/e72d1f7b-0d7c-4b7d-895b-a85bd732e2ed/-/crop/5107x1003/0,151/-/preview/
 instagram: jo.degousee
 linkedin: jodegousee
-email:
 meta:
   description: This is a meta description.
   title: Contact Page
