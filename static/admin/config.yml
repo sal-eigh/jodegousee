@@ -43,8 +43,10 @@ collections: # A list of collections the CMS should be able to edit
             }
           - { label: Subtitle, name: subtitle, widget: markdown, required: false }
           - { label: Body, name: body, widget: markdown, required: false }
-          - { label: Instagram, name: instagram, widget: text, requred: false }
-          - { label: Linkedin, name: linkedin, widget: string, required: false }
+          - { label: Instagram Handle, name: instagram, widget: string, requred: false }
+          - { label: Linkedin Handle, name: linkedin, widget: string, required: false }
+          - { label: Instagram Link, name: instagramLink, widget: string, requred: false }
+          - { label: Linkedin Link, name: linkedinLink, widget: string, required: false }
           - label: 'Meta'
             required: false
             name: 'meta'
