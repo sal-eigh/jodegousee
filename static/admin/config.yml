@@ -42,10 +42,10 @@ collections: # A list of collections the CMS should be able to edit
                 { media_library: { config: { imageShrink: 2600x2600 } } },
             }
           - { label: Subtitle, name: subtitle, widget: markdown, required: false }
-          - { label: Body, name: body, widget: markdown }
-          - { label: Instagram, name: instagram, widget: text }
-          - { label: Linkedin, name: linkedin, widget: string }
-          - { label: Email Address, name: email, widget: string }
+          - { label: Body, name: body, widget: markdown, required: false }
+          - { label: Instagram, name: instagram, widget: text, requred: false }
+          - { label: Linkedin, name: linkedin, widget: string, required: false }
+          - { label: Email Address, name: email, widget: string, required: false }
           - label: 'Meta'
             required: false
             name: 'meta'
