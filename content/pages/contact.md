@@ -7,8 +7,8 @@ instagram: jo.degousee
 linkedin: jodegousee
 instagramLink: https://www.instagram.com/jo.degousee
 linkedinLink: https://www.linkedin.com/in/jodegousee
-profilePic: https://ucarecdn.com/63832e87-77e7-4de0-810c-65d9b8f50e57/
+profilePic: https://ucarecdn.com/6d0a6ef9-5896-4efd-a38a-24339881d9a5/
 meta:
-  description: This is a meta description.
+  description: Jonathan Degousée's Contact Info
   title: Contact Page
 ---
