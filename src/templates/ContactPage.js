@@ -1,10 +1,10 @@
 import React from 'react'
-import { Instagram, Linkedin, Mail } from 'react-feather'
+import { Instagram, Linkedin } from 'react-feather'
 import { graphql } from 'gatsby'
 
 import PageHeader from '../components/PageHeader'
-import Content from '../components/Content'
 import Layout from '../components/Layout'
+import SVGIcon from '../components/SVGIcon'
 import './ContactPage.css'
 
 // Export Template for use in CMS preview
@@ -12,8 +12,10 @@ import './ContactPage.css'
 export const ContactPageTemplate = ({
   title,
   featuredImage,
+  vimeo,
   instagram,
   linkedin,
+  vimeoLink,
   instagramLink,
   linkedinLink,
   profilePic
@@ -31,6 +33,11 @@ export const ContactPageTemplate = ({
             src={profilePic}
           />
           <div className="Contact--Details--Items">
+            {vimeo && (
+              <a className="Contact--Details--Item" href={vimeoLink} target="_blank" rel="noopener noreferrer">
+                 <SVGIcon src="/images/vimeo.svg" /> {vimeo}
+              </a>
+            )}
             {instagram && (
               <a className="Contact--Details--Item" href={instagramLink} target="_blank" rel="noopener noreferrer">
                 <Instagram /> {instagram}
@@ -68,8 +75,10 @@ export const pageQuery = graphql`
         title
         template
         featuredImage
+        vimeo
         instagram
         linkedin
+        vimeoLink
         instagramLink
         linkedinLink
         profilePic
