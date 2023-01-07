@@ -41,8 +41,10 @@ collections: # A list of collections the CMS should be able to edit
               options:
                 { media_library: { config: { imageShrink: 2600x2600 } } },
             }
+          - { label: Vimeo Handle, name: vimeo, widget: string, requred: false }
           - { label: Instagram Handle, name: instagram, widget: string, requred: false }
           - { label: Linkedin Handle, name: linkedin, widget: string, required: false }
+          - { label: Vimeo Link, name: vimeoLink, widget: string, requred: false }
           - { label: Instagram Link, name: instagramLink, widget: string, requred: false }
           - { label: Linkedin Link, name: linkedinLink, widget: string, required: false }
           - { label: Profile Pic, name: profilePic, widget: image }
