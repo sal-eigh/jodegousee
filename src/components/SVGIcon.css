@@ -1,11 +1,12 @@
 .SVGIcon {
-  height: 5.6rem;
-  width: 5.6rem;
+  width: 2.4rem;
+  height: 2.4rem;
   position: relative;
   display: inline-block;
-  background: lightblue;
+  background: white;
   border-radius: 50%;
   transition: 0.3s ease all;
+  margin-right: 1.5rem;
 }
 
 .SVGIcon--icon {
@@ -13,19 +14,11 @@
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: contain;
-  background: whitesmoke;
-  height: 60%;
-  width: 60%;
+  background: var(--primary);
+  height: 100%;
+  width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: 0.3s ease all;
-}
-
-.SVGIcon:hover {
-  background: yellow;
-}
-
-.SVGIcon:hover .SVGIcon--icon {
-  background: purple;
 }
