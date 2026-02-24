@@ -1,0 +1,31 @@
+{
+  "brandName": "Jonathan Degousée",
+  "email": "jodegousee@gmail.com",
+  "headerLayout": "brand-left-nav-right",
+  "navStyle": "adaptive",
+  "headingFont": "Bungee",
+  "bodyFont": "Inter",
+  "subtitleFont": "",
+  "navLinks": [
+    {
+      "label": "Home",
+      "url": "/"
+    },
+    {
+      "label": "Bad Dreams",
+      "url": "/bad-dreams"
+    },
+    {
+      "label": "Rats",
+      "url": "/rats"
+    },
+    {
+      "label": "Music Video",
+      "url": "/music-video"
+    },
+    {
+      "label": "About",
+      "url": "/about"
+    }
+  ]
+}

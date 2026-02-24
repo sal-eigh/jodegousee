@@ -1,0 +1,20 @@
+{
+  "slug": "bad-dreams",
+  "title": "Bad Dreams",
+  "thumbnail": "/images/uploads/bad-dreams-text.jpg",
+  "order": 1,
+  "blocks": [
+    {
+      "overlayStyle": "title-subtitle-bl",
+      "overlaySubtitle": "2026 / 13 min / Colour / Alexa Mini",
+      "overlayTitle": "Bad Dreams",
+      "maxHeight": "100dvh",
+      "overlayRight": "",
+      "overlayColor": "#ffffff",
+      "overlayLeft": "",
+      "type": "heroImage",
+      "image": "/images/uploads/bad-dreams-text.jpg",
+      "overlayFont": "Bungee"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--body-font, "Inter"), sans-serif;
+  --font-heading: var(--heading-font, "Bungee"), cursive;
+  --font-subtitle: var(--subtitle-font, var(--body-font, "Inter")), sans-serif;
+}

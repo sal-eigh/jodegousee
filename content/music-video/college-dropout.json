@@ -1,0 +1,15 @@
+{
+  "title": "College Dropout",
+  "artist": "City Fidelia",
+  "thumbnail": "/images/uploads/college-drop.jpg",
+  "video": "https://www.youtube.com/watch?v=HIxOWLdEvk4&list=RDHIxOWLdEvk4&start_radio=1",
+  "playButtonText": "",
+  "order": 1,
+  "credits": [
+    "Year: 2021",
+    "Label: Ensemble",
+    "Director: Jonathan Degousée",
+    "DoP: Solaris Media",
+    "Editor: Solaris Media"
+  ]
+}

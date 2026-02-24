@@ -1,119 +1,243 @@
-const _ = require('lodash')
-const path = require('path')
-const { createFilePath } = require('gatsby-source-filesystem')
-const { fmImagesToRelative } = require('gatsby-remark-relative-images')
+const path = require("path")
 
-exports.createPages = ({ actions, graphql }) => {
+exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
-  return graphql(`
-    {
-      allMarkdownRemark(limit: 1000) {
-        edges {
-          node {
-            id
-            frontmatter {
-              template
-              title
+  const result = await graphql(`
+    query {
+      allFilmsJson {
+        nodes {
+          slug
+          title
+          thumbnail
+          order
+          blocks {
+            type
+            image
+            maxHeight
+            video
+            videoFile
+            thumbnail
+            playButtonText
+            images {
+              image
+              alt
+              overlayStyle
+              overlayFont
+              overlayTitle
+              overlaySubtitle
+              overlayLeft
+              overlayRight
+              overlayColor
+              overlayLink
             }
-            fields {
-              slug
-              contentType
+            interval
+            title
+            projectType
+            year
+            director
+            description
+            heading
+            body
+            alt
+            caption
+            overlayStyle
+            overlayTitle
+            overlaySubtitle
+            overlayLeft
+            overlayRight
+            overlayColor
+            overlayLink
+            bgColor
+            links {
+              text
+              url
+              color
+            }
+            socialLinks {
+              platform
+              url
+              color
             }
           }
         }
       }
     }
-  `).then(result => {
-    if (result.errors) {
-      result.errors.forEach(e => console.error(e.toString()))
-      return Promise.reject(result.errors)
-    }
+  `)
 
-    const mdFiles = result.data.allMarkdownRemark.edges
-
-    const contentTypes = _.groupBy(mdFiles, 'node.fields.contentType')
-
-    _.each(contentTypes, (pages, contentType) => {
-      const pagesToCreate = pages.filter(page =>
-        // get pages with template field
-        _.get(page, `node.frontmatter.template`)
-      )
-      if (!pagesToCreate.length) return console.log(`Skipping ${contentType}`)
-
-      console.log(`Creating ${pagesToCreate.length} ${contentType}`)
-
-      pagesToCreate.forEach((page, index) => {
-        const id = page.node.id
-        createPage({
-          // page slug set in md frontmatter
-          path: page.node.fields.slug,
-          component: path.resolve(
-            `src/templates/${String(page.node.frontmatter.template)}.js`
-          ),
-          // additional data can be passed via context
-          context: {
-            id
-          }
-        })
-      })
+  result.data.allFilmsJson.nodes.forEach((film) => {
+    createPage({
+      path: `/${film.slug}`,
+      component: path.resolve("./src/templates/film.js"),
+      context: {
+        ...film,
+      },
     })
   })
 }
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions
-
-  // convert frontmatter images
-  fmImagesToRelative(node)
-
-  // Create smart slugs
-  // https://github.com/Vagr9K/gatsby-advanced-starter/blob/master/gatsby-node.js
-  let slug
-  if (node.internal.type === 'MarkdownRemark') {
-    const fileNode = getNode(node.parent)
-    const parsedFilePath = path.parse(fileNode.relativePath)
-
-    if (_.get(node, 'frontmatter.slug')) {
-      slug = `/${node.frontmatter.slug.toLowerCase()}/`
-    } else if (
-      // home page gets root slug
-      parsedFilePath.name === 'home' &&
-      parsedFilePath.dir === 'pages'
-    ) {
-      slug = `/`
-    } else if (_.get(node, 'frontmatter.title')) {
-      slug = `/${_.kebabCase(parsedFilePath.dir)}/${_.kebabCase(
-        node.frontmatter.title
-      )}/`
-    } else if (parsedFilePath.dir === '') {
-      slug = `/${parsedFilePath.name}/`
-    } else {
-      slug = `/${parsedFilePath.dir}/`
-    }
-
-    createNodeField({
-      node,
-      name: 'slug',
-      value: slug
-    })
-
-    // Add contentType to node.fields
-    createNodeField({
-      node,
-      name: 'contentType',
-      value: parsedFilePath.dir
-    })
-  }
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      alias: {
+        "react/umd/react.production.min.js": require.resolve("react"),
+        "react-dom/umd/react-dom.production.min.js": require.resolve("react-dom"),
+      },
+    },
+  })
 }
 
-exports.onCreateWebpackConfig = ({ getConfig, actions }) => {
-  if (getConfig().mode === 'production') {
-    actions.setWebpackConfig({
-      devtool: false
-    });
-  }
-};
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  createTypes(`
+    type HomepageJson implements Node {
+      backgroundMode: String
+      backgroundImage: String
+      videoFile: String
+      carouselImages: [String]
+      carouselInterval: Int
+      overlayOpacity: Int
+      contentLayout: String
+      headingLine1: String
+      headingLine2: String
+      subheading: String
+      textColor: String
+      links: [HomepageLink]
+      bottomText: String
+      bottomLink: String
+    }
 
-// Random fix for https://github.com/gatsbyjs/gatsby/issues/5700
-module.exports.resolvableExtensions = () => ['.json']
+    type HomepageLink {
+      text: String
+      url: String
+    }
+
+    type SettingsJson implements Node {
+      brandName: String
+      email: String
+      headerLayout: String
+      navStyle: String
+      headingFont: String
+      bodyFont: String
+      subtitleFont: String
+      navLinks: [NavLink]
+    }
+
+    type NavLink {
+      label: String
+      url: String
+    }
+
+    type AboutJson implements Node {
+      bgColor: String
+      textColor: String
+      heading: String
+      headingLine2: String
+      layout: String
+      photo: String
+      photoSize: String
+      bioIntro: String
+      bioIntroStyle: String
+      bioIntroSize: String
+      bioIntroColor: String
+      bioIntroFont: String
+      bio: String
+      bioStyle: String
+      bioSize: String
+      bioColor: String
+      bioFont: String
+      contactSection: ContactSection
+      footer: AboutFooter
+    }
+
+    type ContactSection {
+      content: String
+      style: String
+      size: String
+      color: String
+      font: String
+    }
+
+    type AboutFooter {
+      bgColor: String
+      links: [FooterLink]
+      socialLinks: [SocialLink]
+    }
+
+    type FilmsJson implements Node {
+      slug: String
+      title: String
+      thumbnail: String
+      order: Int
+      blocks: [FilmBlock]
+    }
+
+    type FilmBlock {
+      type: String
+      image: String
+      maxHeight: String
+      video: String
+      videoFile: String
+      thumbnail: String
+      playButtonText: String
+      images: [GalleryImage]
+      interval: Int
+      title: String
+      projectType: String
+      year: String
+      director: String
+      description: String
+      heading: String
+      body: String
+      alt: String
+      caption: String
+      overlayStyle: String
+      overlayFont: String
+      overlayTitle: String
+      overlaySubtitle: String
+      overlayLeft: String
+      overlayRight: String
+      overlayColor: String
+      overlayLink: String
+      bgColor: String
+      links: [FooterLink]
+      socialLinks: [SocialLink]
+    }
+
+    type GalleryImage {
+      image: String
+      alt: String
+      overlayStyle: String
+      overlayFont: String
+      overlayTitle: String
+      overlaySubtitle: String
+      overlayLeft: String
+      overlayRight: String
+      overlayColor: String
+      overlayLink: String
+    }
+
+    type FooterLink {
+      text: String
+      url: String
+      color: String
+    }
+
+    type SocialLink {
+      platform: String
+      url: String
+      color: String
+    }
+
+    type MusicVideoJson implements Node {
+      title: String
+      artist: String
+      thumbnail: String
+      video: String
+      videoFile: String
+      playButtonText: String
+      order: Int
+      credits: [String]
+    }
+  `)
+}

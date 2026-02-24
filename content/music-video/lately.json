@@ -1,0 +1,15 @@
+{
+  "title": "Lately",
+  "artist": "City Fidelia",
+  "thumbnail": "/images/uploads/lately-tb.jpg",
+  "video": "https://www.youtube.com/watch?v=49qKNNJQTJo&list=RD49qKNNJQTJo&start_radio=1",
+  "playButtonText": "",
+  "order": 4,
+  "credits": [
+    "Year: 2016",
+    "Label: Ensemble",
+    "Director: Jonathan Degousée",
+    "DoP: Matthew Muszalski",
+    "Editor: Jonathan Degousée"
+  ]
+}
