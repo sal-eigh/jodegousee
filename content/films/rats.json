@@ -28,10 +28,10 @@
           "overlayRight": "",
           "overlayColor": "#ffffff",
           "overlayLeft": "--",
-          "image": "/images/uploads/knife.jpg"
+          "image": "/images/uploads/knife2.jpg"
         },
         {
-          "image": "/images/uploads/jafar.jpg",
+          "image": "/images/uploads/jafar2.jpg",
           "alt": "Rats - Jafar Holding a Knife",
           "overlayStyle": null,
           "overlayTitle": "",
@@ -40,15 +40,15 @@
           "overlayRight": "\n\n\n\n\n-"
         },
         {
-          "image": "/images/uploads/chimney.jpg",
+          "image": "/images/uploads/chimney2.jpg",
           "alt": "Rats - Chimney Scene"
         },
         {
-          "image": "/images/uploads/rats-headphones.jpg",
+          "image": "/images/uploads/kev2.jpg",
           "alt": "Rats - Headphone Scene"
         },
         {
-          "image": "/images/uploads/train2.jpg",
+          "image": "/images/uploads/train2b.jpg",
           "alt": "Rats - Train Scene",
           "overlayStyle": null,
           "overlayRight": "  ",
