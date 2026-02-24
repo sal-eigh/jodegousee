@@ -1,0 +1,34 @@
+{
+  "subheading": "Filmmaker",
+  "contentLayout": "left-links",
+  "bottomLink": "/about",
+  "carouselInterval": 4000,
+  "backgroundMode": "carousel",
+  "textColor": "#ffffff",
+  "videoFile": "",
+  "bottomText": "About",
+  "carouselImages": [
+    "/images/uploads/rats-p3.jpg",
+    "/images/uploads/city-fidelia_mama-knows.jpg",
+    "/images/uploads/demo-v2.00_01_06_03.still003.jpg",
+    "/images/uploads/rats-headphones.jpg",
+    "/images/uploads/demo-v2.00_01_06_03.still001.jpg"
+  ],
+  "links": [
+    {
+      "text": "Bad Dreams",
+      "url": "/bad-dreams"
+    },
+    {
+      "text": "Rats",
+      "url": "/rats"
+    },
+    {
+      "text": "Music Video",
+      "url": "music-video"
+    }
+  ],
+  "overlayOpacity": 50,
+  "headingLine1": "Jonathan",
+  "headingLine2": "Degousée"
+}
