@@ -373,7 +373,7 @@ const AdminPage = () => {
       })
 
       // -----------------------------------------------
-      // MUSIC VIDEO PREVIEW
+      // MUSIC VIDEOS PREVIEW
       // -----------------------------------------------
       CMS.registerPreviewTemplate("music-video", ({ entry, getAsset }) => {
         const title = entry.getIn(["data", "title"]) || ""

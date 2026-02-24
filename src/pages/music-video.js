@@ -15,7 +15,7 @@ export default function MusicVideoPage({ data }) {
             className="text-black text-4xl md:text-5xl lg:text-6xl leading-tight"
             style={{ fontFamily: "var(--heading-font), cursive" }}
           >
-            Music Video
+            Music Videos
           </h1>
         </div>
 
@@ -99,4 +99,4 @@ export const query = graphql`
   }
 `
 
-export const Head = () => <Seo title="Music Video" />
+export const Head = () => <Seo title="Music Videos" />

@@ -369,10 +369,10 @@ collections:
                     required: false
 
   # -----------------------------------------------
-  # MUSIC VIDEO
+  # MUSIC VIDEOS
   # -----------------------------------------------
-  - name: "music-video"
-    label: "Music Video"
+  - name: "music-videos"
+    label: "Music Videos"
     folder: "content/music-video"
     create: true
     extension: "json"
