@@ -229,7 +229,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       color: String
     }
 
-    type MusicVideoJson implements Node {
+    type MusicVideosJson implements Node {
       title: String
       artist: String
       thumbnail: String

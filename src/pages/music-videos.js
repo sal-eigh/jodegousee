@@ -4,8 +4,8 @@ import Layout from "../components/Layout"
 import MediaPlayer from "../components/MediaPlayer"
 import Seo from "../components/Seo"
 
-export default function MusicVideoPage({ data }) {
-  const projects = data.allMusicVideoJson.nodes.sort((a, b) => a.order - b.order)
+export default function MusicVideosPage({ data }) {
+  const projects = data.allMusicVideosJson.nodes.sort((a, b) => a.order - b.order)
 
   return (
     <Layout>
@@ -84,7 +84,7 @@ export default function MusicVideoPage({ data }) {
 
 export const query = graphql`
   query {
-    allMusicVideoJson {
+    allMusicVideosJson {
       nodes {
         title
         artist
