@@ -373,7 +373,7 @@ collections:
   # -----------------------------------------------
   - name: "music-videos"
     label: "Music Videos"
-    folder: "content/music-video"
+    folder: "content/music-videos"
     create: true
     extension: "json"
     format: "json"
